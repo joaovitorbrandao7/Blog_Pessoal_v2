@@ -1,0 +1,27 @@
+#img-bg{
+    background-image: url('https://cdn.pixabay.com/photo/2018/03/20/14/05/technology-3243375_960_720.jpg');
+    /* background-color: rgb(107, 7, 128); */
+    min-height: 696px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.br{
+    border-bottom: 3px solid rgb(85, 9, 207);
+}
+
+.bg-c{
+    background-color: rgb(235, 235, 235);
+}
+
+.btn{
+    background-color: rgb(85, 9, 207);
+    color: white;
+}
+
+.btn:hover{
+    background-color: transparent;
+    border: 1px solid rgb(85, 9, 207);
+    color: rgb(85, 9, 207);
+}
