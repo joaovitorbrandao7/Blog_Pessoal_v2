@@ -22,12 +22,12 @@ export class AuthService {
     return this.http.post<User>('https://bloggenturma28.herokuapp.com/usuarios/cadastrar', user)
   }
 
-  logado(){
-    let ok: boolean = false
+   logado(){
+     let ok: boolean = false
 
-    if(environment.token != ''){
-      ok = true
-    }
-    return ok
+     if(environment.token != ''){
+       ok = true
+     }
+     return ok
+   }
   }
-}

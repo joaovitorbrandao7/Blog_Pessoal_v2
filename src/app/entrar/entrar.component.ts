@@ -33,7 +33,7 @@ export class EntrarComponent implements OnInit {
   
       this.userLogin.foto
 
-      alert('Logado com sucesso!')
+      // alert('Logado com sucesso!')
       this.router.navigate(['/inicio'])
     }, erro =>{
       if(erro.status == 500){
