@@ -32,5 +32,7 @@ export class PostagemService {
 
     deletePostagem(id: number){
       return this.http.delete<Postagem>(`https://blogpessoaljv.herokuapp.com/postagens/${id}`, this.token)
+
+      // asas
     }
 }
