@@ -5,6 +5,13 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    /* backdrop-filter: url('https://preview.redd.it/j5g9uqd1skiz.jpg?auto=webp&s=067f18668fc7e11e12edb0e1b0cd87904caf5896') blur(10px) saturate(250%); */
+    
+    /* filter: blur(10px);
+    -webkit-filter: blur(10px);
+    -moz-filter: blur(10px);
+    -o-filter: blur(10px);
+    -ms-filter: blur(10px);     */
 }
 
 .br{
@@ -24,4 +31,21 @@
     background-color: transparent;
     border: 1px solid rgb(85, 9, 207);
     color: rgb(85, 9, 207);
+}
+.container{
+display: flex;
+align-items: center;
+
+}
+
+.botao2{
+    background-color: transparent;
+    border: 1px solid rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    padding: 10px;
+
+}
+
+h1{
+    font-size: 50px;
 }

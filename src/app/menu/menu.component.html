@@ -5,21 +5,28 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-           
-            <ul class="navbar-nav mr-auto d-flex align-items-center">
+
+            <ul class="navbar-nav mr-auto d-flex align-items-center list-group list-group-horizontal">
                 <li class="nav-item">
-                    <img src="{{foto}}" alt="imagem do user" width="50px" height="50px"
-                        class="rounded-circle">
+                    <img src="{{foto}}" alt="imagem do user" width="50px" height="50px" class="rounded-circle">
                 </li>
 
                 <li class="nav-item p-3">
                     <p class="m-0 fs-16 text-white">Olá, {{nome}} </p>
                 </li>
 
-                <li class="nav-item p-3">
+                <li class="nav-item ml-3 mr-1 p-1">
                     <a href="">
                         <p class="m-0 fs-16 text-white">
                             <i class="fas fa-edit"></i>
+                        </p>
+                    </a>
+                </li>
+
+                <li class="nav-item p-1">
+                    <a routerLink="/inicio">
+                        <p class="m-0 fs-16 text-white">
+                            <i class="fas fa-home"></i>
                         </p>
                     </a>
                 </li>

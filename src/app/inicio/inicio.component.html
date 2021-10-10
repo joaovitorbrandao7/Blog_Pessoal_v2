@@ -4,18 +4,19 @@
     <div class="col-md-6">
       <div class="row d-flex justify-content-center">
         <div class="col-md-6 text-white">
-          <h1 class="fs-54">Salve parça!</h1>
-          <h5 class="fs-18">Manda seus papos e visões aqui!</h5>
+          <h1 class="fs-54">Bem vindo(a)</h1>
+          <h5 class="fs-18">Compartilhe com a gente!</h5>
         </div>
       </div>
 
       <div class="row d-flex justify-content-center mt-3 mb-5">
         <div class="col-md-6">
-          <button class="btn btn-light mr-2" data-bs-toggle="modal" data-bs-target="#novaPostagem">Nova
+          <button class="btn btn-light mr-2 btn-block" data-bs-toggle="modal" data-bs-target="#novaPostagem">Nova
             Postagem</button>
+            <div class="d-flex justify-content-between mt-2">
           <a class="btn btn-outline-light" href="#postagens">Ver Postagens</a>
           <a class="btn btn-outline-light" routerLink='/tema'>Cadastrar um tema</a>
-
+        </div>
         </div>
       </div>
     </div>
@@ -90,7 +91,9 @@
                 </small></p>
                 <p class="card-text">By: <small class="text-muted">Você</small></p>
 
-              <!-- </div> -->
+                <a [routerLink]="['/postagem-edit', item.id]" class="btn btnC mr-3" href="">Editar</a>
+                <a [routerLink]="['/postagem-delete', item.id]" class="btn btnD" href="">Apagar</a>
+
             </div>
          
         </div>
@@ -109,7 +112,7 @@
 
   
 
-    <div class="card-columns m-3" *ngFor='let tema of listaTemas'>
+    <div class="card-columns mt-3" *ngFor='let tema of listaTemas'>
 
       <div class="card text-center" *ngFor='let item of tema.postagem'>
         <div class="card-body">
@@ -167,7 +170,7 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-        <button type="button" class="btn btn-primary" data-bs-dismiss="modal" (click)='publicar()'>Publicar</button>
+        <button type="button" class="btn btnC" data-bs-dismiss="modal" (click)='publicar()'>Publicar</button>
       </div>
     </div>
   </div>
